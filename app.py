@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    #count = redis.incr('hits')
+    count = redis.incr('hits')
     return '<h1 style="color:red">Welcome to Java Home Docker App</h1>'
 
 if __name__ == "__main__":
